@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".ProfilFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingBottom="40dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="-5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/header" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/font_primary"
+                    android:text="Detail Profil"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/container_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/container_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_status_transaction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:text="EDIT PROFIL"
+                            android:textColor="@color/dark_color"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:text="Pastikan Identitas Diri Benar"
+                            android:textColor="@color/gray_color"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/ed_nis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text"
+                            android:backgroundTint="@color/bg_color"
+                            android:drawableLeft="@drawable/ic_nis"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:includeFontPadding="true"
+                            android:inputType="number"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp"
+                            android:text="5190411392"
+                            android:textColor="@color/dark_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/ed_nama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text"
+                            android:backgroundTint="@color/bg_color"
+                            android:drawableLeft="@drawable/ic_person"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:includeFontPadding="true"
+                            android:inputType="textPersonName"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp"
+                            android:text="MEGAN"
+                            android:drawableTint="@color/dark_color"
+                            android:textColor="@color/dark_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/ed_tgl_lahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text"
+                            android:backgroundTint="@color/bg_color"
+                            android:drawableLeft="@drawable/ic_calendar"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/dark_color"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:includeFontPadding="true"
+                            android:inputType="date"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp"
+                            android:text="21 Jul 1999"
+                            android:textColor="@color/dark_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/ed_kelas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text"
+                            android:backgroundTint="@color/bg_color"
+                            android:drawableLeft="@drawable/ic_class"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:includeFontPadding="true"
+                            android:inputType="textPersonName"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp"
+                            android:text="11-OTKP 1"
+                            android:textColor="@color/dark_color"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/sp_jenis_kelamin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:backgroundTint="@color/bg_color"
+                            android:entries="@array/jenis_kelamin"
+                            android:minHeight="48dp"
+                            tools:listitem="@layout/sex_items" />
+
+                        <EditText
+                            android:id="@+id/ed_alamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text"
+                            android:backgroundTint="@color/bg_color"
+                            android:drawableLeft="@drawable/ic_location"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:includeFontPadding="true"
+                            android:inputType="textPersonName"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp"
+                            android:text="KEBUMEN"
+                            android:textColor="@color/dark_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/ed_agama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text"
+                            android:backgroundTint="@color/bg_color"
+                            android:drawableLeft="@drawable/ic_agama"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:includeFontPadding="true"
+                            android:inputType="textPersonName"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp"
+                            android:text="ISLAM"
+                            android:textColor="@color/dark_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/ed_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text"
+                            android:backgroundTint="@color/bg_color"
+                            android:drawableLeft="@drawable/ic_lock"
+                            android:drawablePadding="10dp"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:hint="Isi jika ingin ganti password"
+                            android:includeFontPadding="true"
+                            android:inputType="textPassword"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp"
+                            android:textColor="@color/dark_color"
+                            android:textColorHighlight="@color/gray_color"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/btn_update"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/btn_primary"
+                            android:backgroundTint="#F86F03"
+                            android:drawableLeft="@drawable/ic_edit"
+                            android:drawableTint="@color/white"
+                            android:elevation="8dp"
+                            android:fontFamily="@font/font_primary"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="20dp"
+                            android:text="Ubah Profil"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/btn_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/btn_primary"
+                            android:backgroundTint="#F31559"
+                            android:drawableLeft="@drawable/ic_logout"
+                            android:drawableTint="@color/white"
+                            android:elevation="8dp"
+                            android:fontFamily="@font/font_primary"
+                            android:minHeight="48dp"
+                            android:paddingHorizontal="20dp"
+                            android:text="Logout"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

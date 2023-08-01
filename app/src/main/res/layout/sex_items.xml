@@ -1,0 +1,16 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawablePadding="10dp"
+    android:text="Pria"
+    android:textColor="@color/dark_color"
+    android:fontFamily="@font/montserrat_bold"
+    android:padding="10dp"
+    android:background="@drawable/edit_text"
+    android:layout_marginBottom="15dp"
+    android:paddingHorizontal="15dp"
+    android:backgroundTint="@color/bg_color"
+    android:textSize="16sp"
+    android:drawableTint="@color/dark_color" />

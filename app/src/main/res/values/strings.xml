@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tabungan Siswa Smanda App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="filter">
+        <item>Transaksi Terakhir</item>
+        <item>Minggu Ini</item>
+        <item>Bulan Ini</item>
+    </string-array>
+    <string-array name="jenis_kelamin">
+        <item>Pilih Jenis Kelamin</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
